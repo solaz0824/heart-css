@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Henny Penny", cursive;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: aliceblue;
+    animation: bgchanges 10s infinite;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 800px;
+    .heart-box {
+        text-align: center;
+        .fa {
+            font-size: 100px;
+            color: darkred;
+            animation: beat .75s infinite;
+            position: relative;
+            margin: 0 0 100px 50px;
+        }
+    }
+    .person-box {
+        position: absolute;
+        font-size: 700px;
+    }
+  }
+
+
+
+  @keyframes bgchanges {
+    0%   {background-color: rgb(135, 236, 104);}
+    25%  {background-color: skyblue;}
+    50%  {background-color: rgb(231, 120, 28);}
+    70%  {background-color: snow;}
+    100% {background-color: black;}
+  }
+
+
+  @keyframes beat {
+      from {font-size: 100px;}
+      to {font-size: 120px;}
+  }

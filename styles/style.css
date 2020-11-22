@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Henny Penny", cursive;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background-color: aliceblue;
+  -webkit-animation: bgchanges 10s infinite;
+          animation: bgchanges 10s infinite;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 800px;
+}
+
+.container .heart-box {
+  text-align: center;
+}
+
+.container .heart-box .fa {
+  font-size: 100px;
+  color: darkred;
+  -webkit-animation: beat .75s infinite;
+          animation: beat .75s infinite;
+  position: relative;
+  margin: 0 0 100px 50px;
+}
+
+.container .person-box {
+  position: absolute;
+  font-size: 700px;
+}
+
+@-webkit-keyframes bgchanges {
+  0% {
+    background-color: #87ec68;
+  }
+  25% {
+    background-color: skyblue;
+  }
+  50% {
+    background-color: #e7781c;
+  }
+  70% {
+    background-color: snow;
+  }
+  100% {
+    background-color: black;
+  }
+}
+
+@keyframes bgchanges {
+  0% {
+    background-color: #87ec68;
+  }
+  25% {
+    background-color: skyblue;
+  }
+  50% {
+    background-color: #e7781c;
+  }
+  70% {
+    background-color: snow;
+  }
+  100% {
+    background-color: black;
+  }
+}
+
+@-webkit-keyframes beat {
+  from {
+    font-size: 100px;
+  }
+  to {
+    font-size: 120px;
+  }
+}
+
+@keyframes beat {
+  from {
+    font-size: 100px;
+  }
+  to {
+    font-size: 120px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
